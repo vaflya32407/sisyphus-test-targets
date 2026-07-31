@@ -1,0 +1,38 @@
+[
+  {
+    "record_id": "TVR-001",
+    "category": "alpha",
+    "quantity": 2,
+    "unit_price_cents": 1250
+  },
+  {
+    "record_id": "TVR-002",
+    "category": "beta",
+    "quantity": 3,
+    "unit_price_cents": 700
+  },
+  {
+    "record_id": "TVR-003",
+    "category": "alpha",
+    "quantity": 1,
+    "unit_price_cents": 2500
+  },
+  {
+    "record_id": "TVR-004",
+    "category": "gamma",
+    "quantity": 4,
+    "unit_price_cents": 325
+  },
+  {
+    "record_id": "TVR-005",
+    "category": "beta",
+    "quantity": 2,
+    "unit_price_cents": 1100
+  },
+  {
+    "record_id": "TVR-006",
+    "category": "gamma",
+    "quantity": 5,
+    "unit_price_cents": 200
+  }
+]
