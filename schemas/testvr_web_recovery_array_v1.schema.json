@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "testvr_web_recovery_array_v1.schema.json",
+  "title": "TestVR Web Recovery Array v1",
+  "description": "Schema for a single transaction record in the testvr_web_recovery_array_v1 dataset.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["record_id", "category", "quantity", "unit_price_cents"],
+    "additionalProperties": false,
+    "properties": {
+      "record_id": {
+        "type": "string",
+        "pattern": "^TVR-[0-9]{3}$",
+        "description": "Unique record identifier in the format TVR-NNN."
+      },
+      "category": {
+        "type": "string",
+        "enum": ["alpha", "beta", "gamma"],
+        "description": "Transaction category."
+      },
+      "quantity": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Number of units."
+      },
+      "unit_price_cents": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Price per unit in cents (integer, no floating-point)."
+      }
+    }
+  },
+  "minItems": 1
+}
