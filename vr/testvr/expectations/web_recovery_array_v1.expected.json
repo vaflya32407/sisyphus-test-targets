@@ -1,0 +1,29 @@
+{
+  "contract_id": "testvr.web-recovery-array.v1",
+  "target_path": "vr/testvr/targets/web_recovery_array_v1.json",
+  "schema_path": "vr/testvr/schemas/web_recovery_array_v1.schema.json",
+  "processing": {
+    "record_count": 6,
+    "quantity_total": 17,
+    "extended_value_cents": 11600,
+    "ordered_record_ids": [
+      "TVR-001",
+      "TVR-002",
+      "TVR-003",
+      "TVR-004",
+      "TVR-005",
+      "TVR-006"
+    ],
+    "category_totals_cents": {
+      "alpha": 5000,
+      "beta": 4300,
+      "gamma": 2300
+    }
+  },
+  "constraints": {
+    "credentials_required": false,
+    "maximum_response_bytes": 16384,
+    "required_scheme": "https",
+    "allowed_host": "raw.githubusercontent.com"
+  }
+}
