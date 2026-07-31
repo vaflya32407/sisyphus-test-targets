@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "testvr_web_recovery_array_v1",
+  "title": "Test VR Web Recovery Array v1",
+  "description": "Schema for web recovery test targets array",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the test target"
+      },
+      "name": {
+        "type": "string",
+        "description": "Human-readable name of the test target"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL of the web resource to test recovery for"
+      },
+      "expected_status": {
+        "type": "integer",
+        "description": "Expected HTTP status code after recovery"
+      },
+      "recovery_timeout_ms": {
+        "type": "integer",
+        "description": "Timeout in milliseconds to wait for recovery"
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Optional tags for categorizing the test target"
+      }
+    },
+    "required": ["id", "name", "url", "expected_status"],
+    "additionalProperties": false
+  }
+}
